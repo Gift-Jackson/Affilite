@@ -11,7 +11,7 @@ window.addEventListener("scroll", ()=>{
         header.style.top = "-100px";
     }
     else{
-        header.style.top = "0";
+        header.style.top = "20px";
     }
 
     lastScroll = window.scrollY;
