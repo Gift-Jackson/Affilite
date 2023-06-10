@@ -522,9 +522,27 @@ footer {
 .box{
     background:#f7d413;
     border-radius: 1rem;
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
 }
+
+.div{
+    text-align: center;
+    margin-top: 60px;
+}
+.btn-7{
+    height: 45px;
+    width: 200px;
+    background-color: #05ce81;
+    color: #fefefe;
+    border: none;
+    border-bottom: 4px solid rgba(0, 0, 0, .3);
+    border-radius: 50px;
+}
+.btn-7 a, .btn-7 i{
+    color: #fefefe;
+}
+
 
 
 
@@ -615,6 +633,10 @@ footer {
     .boxes{
         flex-direction: column;
         flex-wrap: wrap;
+    }
+    .box{
+        height: 120px;
+        width: 120px;
     }
 
 }
