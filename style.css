@@ -250,7 +250,7 @@ nav ul a:hover::before {
     text-align: center;
     transform: translateY(50px);
     opacity: 0;
-    animation: hero .5s ease 1 forwards;
+    animation: hero 1s ease 1 forwards;
 }
 
 @keyframes hero {
@@ -364,6 +364,9 @@ nav ul a:hover::before {
     opacity: 0;
     transform: translateX(50%);
     transition: 0.5s;
+}
+.alternative{
+    width: 50%;
 }
 
 .wrap.active {
@@ -487,7 +490,7 @@ textarea {
     box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
 }
 
-.btn-5:hover {
+.btn-5:hover, .btn-4:hover {
     filter: brightness(90%);
 }
 
@@ -508,6 +511,17 @@ footer {
     text-align: center;
     padding: 30px;
     background-color: #f9f9f9;
+}
+.boxes{
+    margin: 30px 0 20px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.box{
+    background:#f7d413;
+    border-radius: 1rem;
 }
 
 
@@ -595,6 +609,9 @@ footer {
 
     .content p {
         font-size: 15px;
+    }
+    .boxes{
+        flex-direction: column;
     }
 
 }
