@@ -522,6 +522,8 @@ footer {
 .box{
     background:#f7d413;
     border-radius: 1rem;
+    height: 100px;
+    width: 100px;
 }
 
 
@@ -612,6 +614,7 @@ footer {
     }
     .boxes{
         flex-direction: column;
+        flex-wrap: wrap;
     }
 
 }
