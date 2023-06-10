@@ -248,6 +248,16 @@ nav ul a:hover::before {
 
 .hero-content {
     text-align: center;
+    transform: translateY(50px);
+    opacity: 0;
+    animation: hero .5s ease 1 forwards;
+}
+
+@keyframes hero {
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .branding {
@@ -355,7 +365,8 @@ nav ul a:hover::before {
     transform: translateX(50%);
     transition: 0.5s;
 }
-.wrap.active{
+
+.wrap.active {
     opacity: 1;
     transform: translateX(0);
 }
@@ -581,7 +592,8 @@ footer {
     form {
         width: 100%;
     }
-    .content p{
+
+    .content p {
         font-size: 15px;
     }
 
