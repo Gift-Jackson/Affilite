@@ -20,11 +20,9 @@
     <div class="top-header">
         <div class="top-nav">
             <div class="back">
-                <a href="index.html">
-                    <button class="back-btn">
-                        <i class="fa-solid fa-arrow-left fa-beat-fade"></a></i> Back
-                </button>
-                </a>
+                
+                    <button class="back-btn"><a href="index.html"><i class="fa-solid fa-arrow-left fa-beat-fade"></i> Back</a></button>
+            
             </div>
 
             <div class="logoo">
@@ -128,11 +126,13 @@
             opacity: 0;
             animation: form 1s ease .5s 1 forwards;
         }
-        .form-container::-webkit-scrollbar{
+
+        .form-container::-webkit-scrollbar {
             display: none;
         }
+
         @keyframes form {
-            100%{
+            100% {
                 opacity: 1;
                 transform: translateY(0);
             }
@@ -265,8 +265,8 @@
         const form1 = document.querySelector(".form1");
         const form2 = document.querySelector(".form2");
 
-         // password
-         const icon = document.getElementById("icon");
+        // password
+        const icon = document.getElementById("icon");
         const pass = document.getElementById("pass");
         const open = document.getElementById("open");
         const close = document.getElementById("close");
@@ -286,13 +286,13 @@
         });
 
         // Show or hide password
-        icon.addEventListener("click",()=>{
-            if(pass.type === "password"){
+        icon.addEventListener("click", () => {
+            if (pass.type === "password") {
                 pass.type = "text";
                 open.style.display = "block";
                 close.style.display = "none";
             }
-            else{
+            else {
                 pass.type = "password";
                 open.style.display = "none";
                 close.style.display = "block";
