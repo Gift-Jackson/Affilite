@@ -20,9 +20,10 @@
     <div class="top-header">
         <div class="top-nav">
             <div class="back">
-                
-                    <button class="back-btn"><a href="index.html"><i class="fa-solid fa-arrow-left fa-beat-fade"></i> Back</a></button>
-            
+
+                <button class="back-btn"><a href="index.html"><i class="fa-solid fa-arrow-left fa-beat-fade"></i>
+                        Back</a></button>
+
             </div>
 
             <div class="logoo">
@@ -66,7 +67,13 @@
                         <h2>Login</h2>
                         <form action="#">
                             <input type="text" name="uname" id="uname" placeholder="Username" required>
-                            <input type="password" name="pass" id="pass" placeholder="Password" required>
+                            <div class="input-control">
+                                <input type="password" name="pass" id="pass2" placeholder="Password" required>
+                                <div id="icon2">
+                                    <i id="close2" class="fa-regular fa-eye-slash"></i>
+                                    <i id="open2" class="fa-regular fa-eye"></i>
+                                </div>
+                            </div>
                             <button type="submit" class="submit-btn">Login</button>
                         </form>
                     </div>
@@ -265,11 +272,17 @@
         const form1 = document.querySelector(".form1");
         const form2 = document.querySelector(".form2");
 
-        // password
+        // Sign up password reveal
         const icon = document.getElementById("icon");
         const pass = document.getElementById("pass");
         const open = document.getElementById("open");
         const close = document.getElementById("close");
+
+        // login password reveal
+        const icon2 = document.getElementById("icon2");
+        const pass2 = document.getElementById("pass2");
+        const open2 = document.getElementById("open2");
+        const close2 = document.getElementById("close2");
 
         btn2.addEventListener("click", () => {
             btn2.classList.add("active")
@@ -285,7 +298,7 @@
             form1.classList.remove("active")
         });
 
-        // Show or hide password
+        // Show or hide Sign up password
         icon.addEventListener("click", () => {
             if (pass.type === "password") {
                 pass.type = "text";
@@ -296,6 +309,20 @@
                 pass.type = "password";
                 open.style.display = "none";
                 close.style.display = "block";
+            }
+        });
+
+        // Show or hide login password
+        icon2.addEventListener("click",()=>{
+            if(pass2.type === "password"){
+                pass2.type = "text";
+                open2.style.display = "block";
+                close2.style.display = "none";
+            }
+            else{
+                pass2.type = "password";
+                open2.style.display = "none";
+                close2.style.display = "block";
             }
         });
     </script>
