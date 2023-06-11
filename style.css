@@ -250,7 +250,7 @@ nav ul a:hover::before {
     text-align: center;
     transform: translateY(50px);
     opacity: 0;
-    animation: hero 1s ease 1 forwards;
+    animation: hero 1s ease .5s 1 forwards;
 }
 
 @keyframes hero {
@@ -297,15 +297,15 @@ nav ul a:hover::before {
     box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
 }
 
-.hero-btns .btn:hover,
-.btn-3:hover {
+.btn:hover {
     filter: brightness(90%);
 }
 
 .hero-btns .btn:active,
 .btn-3:active,
 .btn-4:active,
-.btn-5:active {
+.btn-5:active,
+.btn-7:active {
     transform: scale(0.9);
     box-shadow: unset;
     border-bottom: unset;
@@ -365,7 +365,8 @@ nav ul a:hover::before {
     transform: translateX(50%);
     transition: 0.5s;
 }
-.alternative{
+
+.alternative {
     width: 50%;
 }
 
@@ -381,6 +382,8 @@ nav ul a:hover::before {
 
 .wrap p {
     margin-bottom: 10px;
+    text-align: justify;
+    /* text-justify: inter-word; */
 }
 
 .wrap .btn {
@@ -490,7 +493,9 @@ textarea {
     box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
 }
 
-.btn-5:hover, .btn-4:hover {
+.btn-5:hover,
+.btn-4:hover,
+.btn-7:hover {
     filter: brightness(90%);
 }
 
@@ -512,25 +517,28 @@ footer {
     padding: 30px;
     background-color: #f9f9f9;
 }
-.boxes{
+
+.boxes {
     margin: 30px 0 20px;
     height: auto;
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.box{
-    background:#f7d413;
+
+.box {
+    background: #f7d413;
     border-radius: 1rem;
     height: 150px;
     width: 150px;
 }
 
-.div{
+.div {
     text-align: center;
     margin-top: 60px;
 }
-.btn-7{
+
+.btn-7 {
     height: 45px;
     width: 200px;
     background-color: #05ce81;
@@ -539,7 +547,9 @@ footer {
     border-bottom: 4px solid rgba(0, 0, 0, .3);
     border-radius: 50px;
 }
-.btn-7 a, .btn-7 i{
+
+.btn-7 a,
+.btn-7 i {
     color: #fefefe;
 }
 
@@ -629,12 +639,16 @@ footer {
 
     .content p {
         font-size: 15px;
+        text-align: justify;
+        text-justify: inter-word;
     }
-    .boxes{
+
+    .boxes {
         flex-direction: column;
         flex-wrap: wrap;
     }
-    .box{
+
+    .box {
         height: 120px;
         width: 120px;
     }

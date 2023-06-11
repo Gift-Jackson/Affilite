@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <!-- style link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="logo2.png" type="image/x-icon">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- header -->
+    <div class="top-header">
+        <div class="top-nav">
+            <div class="back">
+                <a href="index.html">
+                    <button class="back-btn">
+                        <i class="fa-solid fa-arrow-left fa-beat-fade"></a></i> Back
+                </button>
+                </a>
+            </div>
+
+            <div class="logoo">
+                <img src="logo2.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- form -->
+    <div class="main">
+        <div class="container">
+            <div class="form-container">
+                <div class="switch-form">
+                    <button class="switch-btn btn1 active">Sign Up</button>
+                    <button class="switch-btn btn2">Login</button>
+                </div>
+
+                <div class="form">
+                    <!-- sign up form -->
+                    <div class="form1">
+                        <h2>Sign <span class="mark">Up</span></h2>
+                        <form action="#">
+                            <input type="text" name="fname" id="fname" placeholder="First Name">
+                            <input type="text" name="sname" id="sname" placeholder="Surname">
+                            <input type="text" name="uname" id="uname" placeholder="Username">
+                            <input type="email" name="email" id="email" placeholder="E-mail Address">
+                            <input type="number" name="refid" id="refid" placeholder="Refferal ID">
+                            <div class="input-control">
+                                <input type="password" name="pass" id="pass" placeholder="Password">
+                                <div id="icon">
+                                    <i id="close" class="fa-regular fa-eye-slash"></i>
+                                    <i id="open" class="fa-regular fa-eye"></i>
+                                </div>
+                            </div>
+                            <button type="submit" class="submit-btn">Register</button>
+                        </form>
+                    </div>
+
+                    <!-- Login form -->
+                    <div class="form2">
+                        <h2>Login</h2>
+                        <form action="#">
+                            <input type="text" name="uname" id="uname" placeholder="Username">
+                            <input type="password" name="pass" id="pass" placeholder="Password">
+                            <button type="submit" class="submit-btn">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- script link -->
+    <script src="menu.js"></script>
+
+    <!-- styling -->
+    <style>
+        .top-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 9;
+        }
+
+        .top-nav {
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-color: #eee;
+        }
+
+        .logoo {
+            height: 60px;
+        }
+
+        .logoo img {
+            height: 100%;
+        }
+
+        .back-btn {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 16px;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        .form-container {
+            width: 400px;
+            height: 500px;
+            margin: auto;
+            overflow: hidden;
+            transform: translateY(50px);
+            opacity: 0;
+            animation: form 1s ease .5s 1 forwards;
+        }
+        @keyframes form {
+            100%{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .switch-form {
+            height: 50px;
+            display: flex;
+            width: 100%;
+            /* flex-basis: 50%; */
+        }
+
+        .switch-btn {
+            width: 50%;
+            border: none;
+            background-color: #eee;
+            font-size: 17px;
+        }
+
+        .switch-btn:hover {
+            filter: brightness(90%);
+        }
+
+        .btn1 {
+            border-top-left-radius: 10px;
+        }
+
+        .btn2 {
+            border-top-right-radius: 10px;
+        }
+
+        .btn1.active {
+            color: #fefefe;
+            background-color: #05ce81;
+        }
+
+        .btn2.active {
+            color: #fefefe;
+            background-color: #05ce81;
+        }
+
+        .form {
+            margin: 30px 0;
+            position: relative;
+            /* overflow: hidden; */
+        }
+
+        .form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form input {
+            height: 40px;
+            width: 100%;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            padding-left: 15px;
+            border-radius: 10px;
+        }
+
+        .form input:focus {
+            border: 1px solid #05ce81;
+        }
+
+        .submit-btn {
+            width: 100%;
+            height: 40px;
+            border: none;
+            background-color: #05ce81;
+            color: #fefefe;
+            font-size: 17px;
+            border-radius: 10px;
+            border-bottom: 4px solid rgba(0, 0, 0, .3);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+        }
+
+        .submit-btn:active {
+            border-bottom: unset;
+            transform: scale(0.9);
+        }
+
+        .form1,
+        .form2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            transition: all .4s ease;
+        }
+
+        .form2 {
+            transform: translateX(120%);
+        }
+
+        .form2.active {
+            transform: translateX(0);
+        }
+
+        .form1.active {
+            transform: translateX(-120%);
+        }
+
+        /* show / hide */
+        .input-control {
+            /* margin-top: 20px; */
+            position: relative;
+        }
+
+        .input-control i {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            color: #05ce81;
+        }
+
+        /* responsiveness */
+        @media (max-width:786px) {
+            .form-container {
+                width: 100%;
+            }
+        }
+    </style>
+
+    <!-- form script -->
+    <script>
+        const btn1 = document.querySelector(".btn1");
+        const btn2 = document.querySelector(".btn2");
+        const form1 = document.querySelector(".form1");
+        const form2 = document.querySelector(".form2");
+
+         // password
+         const icon = document.getElementById("icon");
+        const pass = document.getElementById("pass");
+        const open = document.getElementById("open");
+        const close = document.getElementById("close");
+
+        btn2.addEventListener("click", () => {
+            btn2.classList.add("active")
+            btn1.classList.remove("active")
+            form2.classList.add("active")
+            form1.classList.add("active")
+        });
+
+        btn1.addEventListener("click", () => {
+            btn2.classList.remove("active")
+            btn1.classList.add("active")
+            form2.classList.remove("active")
+            form1.classList.remove("active")
+        });
+
+        // Show or hide password
+        icon.addEventListener("click",()=>{
+            if(pass.type === "password"){
+                pass.type = "text";
+                open.style.display = "block";
+                close.style.display = "none";
+            }
+            else{
+                pass.type = "password";
+                open.style.display = "none";
+                close.style.display = "block";
+            }
+        });
+    </script>
+</body>
+
+</html>
