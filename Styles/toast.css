@@ -1,7 +1,7 @@
 .toast{
     position: fixed;
     top: 2rem;
-    background-color: rgba(243, 207, 214, .5);
+    background-color:rgba(220, 20, 60, .5);
     padding: 1rem 2rem;
     border-radius: .5rem;
     color: crimson;
