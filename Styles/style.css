@@ -709,10 +709,37 @@ button:active {
     height: 2px;
     background-color: var(--white);
     border-radius: 50px;
+    position: relative;
+}
+
+.menu-toggle .bar::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--white);
+    transform: translateY(-5px);
+}
+.menu-toggle .bar::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--white);
+    transform: translateY(5px);
 }
 
 header.scroll .menu-toggle .bar,
-header.header .menu-toggle .bar {
+header.header .menu-toggle .bar,
+header.scroll .menu-toggle .bar::before,
+header.scroll .menu-toggle .bar::after,
+header.header .menu-toggle .bar::after,
+header.header .menu-toggle .bar::before
+ {
     background-color: var(--primary-color-2);
 }
 

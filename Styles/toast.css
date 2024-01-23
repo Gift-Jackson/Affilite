@@ -1,11 +1,12 @@
 .toast{
     position: fixed;
     top: 2rem;
-    background-color:rgba(220, 20, 60, .5);
+    background-color: crimson;
     padding: 1rem 2rem;
     border-radius: .5rem;
-    color: crimson;
+    color: #fefefe;
     display: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,.2);
     z-index: 9;
 }
 
