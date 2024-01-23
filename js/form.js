@@ -25,9 +25,9 @@ signupForm.addEventListener("submit", (e) => {
             })
         }, 3000)
     }
-    else if (username.value === "") {
+    else if (firstName.value === "") {
         toast.classList.add("is-active")
-        toast.textContent = "Username is are required"
+        toast.textContent = "Firstname is are required"
 
         setTimeout(() => {
             toast.classList.remove("is-active");
@@ -41,14 +41,15 @@ signupForm.addEventListener("submit", (e) => {
             toast.classList.remove("is-active");
         }, 3000)
     }
-    else if (firstName.value === "") {
+    else if (username.value === "") {
         toast.classList.add("is-active")
-        toast.textContent = "Firstname is are required"
+        toast.textContent = "Username is are required"
 
         setTimeout(() => {
             toast.classList.remove("is-active");
         }, 3000)
     }
+    
     else if (password.value === "") {
         toast.classList.add("is-active")
         toast.textContent = "Password is are required"
