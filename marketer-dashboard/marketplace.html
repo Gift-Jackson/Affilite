@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#05ce81" />
+    <title>Marketer Dashboard</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../Styles/dashboard.css" />
+    <link rel="stylesheet" href="../Styles/marketplace.css" />
+    <link rel="stylesheet" href="../Styles/withdraw.css" />
+    <link rel="stylesheet" href="../Styles/team.css" />
+    <link rel="stylesheet" href="../Styles/plug-in.css" />
+    <link rel="stylesheet" href="../Styles/dashboard-transition.css" />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- MATERIAL ICON -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <!-- AOS LINK -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="../assets/logo2.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <aside>
+        <header>
+          <a href="#" class="logo">
+            <img src="../assets/logo2.png" alt="Affilite Logo" />
+            <h2 class="hide">Affilite</h2>
+          </a>
+        </header>
+        <hr />
+
+        <!-- NAVIGATION LINKS -->
+        <div class="menu">
+          <nav>
+            <ul>
+              <li>
+                <a href="./dashbord.html" class="links">
+                  <div class="page-link">
+                    <span class="material-symbols-outlined">dashboard</span>
+                    <b class="hide">Dashboard</b>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="./marketplace.html" class="links current">
+                  <div class="page-link">
+                    <span class="material-symbols-outlined">storefront</span>
+                    <b class="hide">Marketplace</b>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="./withdraw.html" class="links">
+                  <div class="page-link">
+                    <span class="material-symbols-outlined">payments</span>
+                    <b class="hide">Withdraw</b>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="./team.html" class="links">
+                  <div class="page-link">
+                    <span class="material-symbols-outlined">diversity_3</span>
+                    <b class="hide">Team Cycle</b>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="./contract.html" class="links">
+                  <div class="page-link">
+                    <span class="material-symbols-outlined">verified_user</span>
+                    <b class="hide">Contract</b>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="./plugin.html" class="links plugin-link">
+                  <div class="page-link">
+                    <span class="material-symbols-outlined">extension</span>
+                    <b class="hide">Plug-in</b>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </aside>
+
+      <!-- MOBILE SIDEBAR -->
+
+      <aside class="mobile-sidebar">
+        <header>
+          <a href="#" class="logo">
+            <img src="../assets/logo2.png" alt="Affilite Logo" />
+            <h2 class="hide">Affilite</h2>
+          </a>
+
+          <div class="close-menu close">
+            <span class="material-symbols-outlined hover">close</span>
+          </div>
+        </header>
+        <hr />
+
+        <!-- NAVIGATION LINKS -->
+        <div class="menu">
+          <nav>
+            <ul>
+              <li>
+                <a href="./dashbord.html" class="links">
+                  <div class="page-link">
+                    <span class="material-symbols-outlined">dashboard</span>
+                    <b class="hide">Dashboard</b>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="./marketplace.html" class="links current">
+                  <div class="page-link">
+                    <span class="material-symbols-outlined">storefront</span>
+                    <b class="hide">Marketplace</b>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="./withdraw.html" class="links">
+                  <div class="page-link">
+                    <span class="material-symbols-outlined">payments</span>
+                    <b class="hide">Withdraw</b>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="./team.html" class="links">
+                  <div class="page-link">
+                    <span class="material-symbols-outlined">diversity_3</span>
+                    <b class="hide">Team Cycle</b>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="./contract.html" class="links">
+                  <div class="page-link">
+                    <span class="material-symbols-outlined">verified_user</span>
+                    <b class="hide">Contract</b>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="./plugin.html" class="links plugin-link">
+                  <div class="page-link">
+                    <span class="material-symbols-outlined">extension</span>
+                    <b class="hide">Plug-in</b>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </aside>
+      <div class="dark-bg close"></div>
+      <!-- END OF MOBILE SIDEBAR -->
+
+      <div class="content">
+        <div class="transition active">
+          <div class="transition-content">
+            <div class="spinner"></div>
+            <h3>Fetching...</h3>
+          </div>
+        </div>
+        <div class="top-nav">
+          <div class="left-side flex">
+            <div class="open-menu open">
+              <span class="material-symbols-outlined hover"
+                >side_navigation</span
+              >
+            </div>
+            <h2 class="page-title">Marketplace</h2>
+          </div>
+
+          <div class="right-side flex">
+            <!-- DROPDOWN -->
+            <div class="drop-down">
+              <ul>
+                <li>
+                  <a href="./templates/profile.html">
+                    <div class="page-link">
+                      <span class="material-symbols-outlined"
+                        >manage_accounts</span
+                      >
+                      <span>Profile</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="page-link">
+                      <span class="material-symbols-outlined">cycle</span>
+                      <span>Switch</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="page-link">
+                      <span class="material-symbols-outlined">logout</span>
+                      <span>Logout</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- DARK/ LIGHT MODE -->
+            <div class="theme-toggle flex">
+              <span class="material-symbols-outlined hover" id="dark"
+                >dark_mode</span
+              >
+              <span class="material-symbols-outlined hover" id="light"
+                >light_mode</span
+              >
+            </div>
+
+            <!-- NOTIFICATION -->
+            <a href="./templates/notification.html" class="notification-link">
+              <div class="notification">
+                <span class="material-symbols-outlined notification-bell hover"
+                  >notifications</span
+                >
+                <div class="indicator active"></div>
+              </div>
+            </a>
+
+            <!-- PROFILE -->
+            <a>
+              <div class="profile-container">
+                <div class="user-name hover">Gift Jackson</div>
+                <div class="initial flex bg-circle">G</div>
+                <span class="material-symbols-outlined">expand_more</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <main id="content">
+          <div class="container">
+            <div class="search-container">
+              <input
+                type="text"
+                class="srch"
+                placeholder="Search for products..."
+              />
+              <button type="submit" class="srch-btn">
+                <span class="material-symbols-outlined">search</span>
+              </button>
+            </div>
+            <div class="no-product">
+              <img src="../assets/marketplace.svg" alt="No_product" />
+              <p>No products yet!</p>
+            </div>
+
+            <template>
+              <div class="product-container search-result">
+                <div class="product-box">
+                  <table>
+                    <tr>
+                      <td><b>Products</b></td>
+                      <td class="description product-name">
+                        affiliate marketing accelerator program
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><b>Product Type</b></td>
+                      <td class="description product-type">Digital</td>
+                    </tr>
+                    <tr>
+                      <td><b>Price ($)</b></td>
+                      <td class="description price">$50</td>
+                    </tr>
+                    <tr>
+                      <td><b>Comm. (%)</b></td>
+                      <td class="description commission">50%</td>
+                    </tr>
+                  </table>
+                  <button
+                    class="promote-btn btn"
+                    onclick="productDetails(this)"
+                  >
+                    Promote
+                  </button>
+                </div>
+                <div class="product-box">
+                  <table>
+                    <tr>
+                      <td><b>Products</b></td>
+                      <td class="description product-name">
+                        affiliate marketing accelerator program
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><b>Product Type</b></td>
+                      <td class="description product-type">Digital</td>
+                    </tr>
+                    <tr>
+                      <td><b>Price ($)</b></td>
+                      <td class="description price">$50</td>
+                    </tr>
+                    <tr>
+                      <td><b>Comm. (%)</b></td>
+                      <td class="description commission">50%</td>
+                    </tr>
+                  </table>
+                  <button
+                    class="promote-btn btn"
+                    onclick="productDetails(this)"
+                  >
+                    Promote
+                  </button>
+                </div>
+                <div class="product-box">
+                  <table>
+                    <tr>
+                      <td><b>Products</b></td>
+                      <td class="description product-name">
+                        affiliate marketing accelerator program
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><b>Product Type</b></td>
+                      <td class="description product-type">Digital</td>
+                    </tr>
+                    <tr>
+                      <td><b>Price ($)</b></td>
+                      <td class="description price">$50</td>
+                    </tr>
+                    <tr>
+                      <td><b>Comm. (%)</b></td>
+                      <td class="description commission">50%</td>
+                    </tr>
+                  </table>
+                  <button
+                    class="promote-btn btn"
+                    onclick="productDetails(this)"
+                  >
+                    Promote
+                  </button>
+                </div>
+                <div class="product-box">
+                  <table>
+                    <tr>
+                      <td><b>Products</b></td>
+                      <td class="description product-name">
+                        affiliate marketing accelerator program
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><b>Product Type</b></td>
+                      <td class="description product-type">Digital</td>
+                    </tr>
+                    <tr>
+                      <td><b>Price ($)</b></td>
+                      <td class="description price">$50</td>
+                    </tr>
+                    <tr>
+                      <td><b>Comm. (%)</b></td>
+                      <td class="description commission">50%</td>
+                    </tr>
+                  </table>
+                  <button
+                    class="promote-btn btn"
+                    onclick="productDetails(this)"
+                  >
+                    Promote
+                  </button>
+                </div>
+                <div class="product-box">
+                  <table>
+                    <tr>
+                      <td><b>Products</b></td>
+                      <td class="description product-name">
+                        affiliate marketing accelerator program
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><b>Product Type</b></td>
+                      <td class="description product-type">Digital</td>
+                    </tr>
+                    <tr>
+                      <td><b>Price ($)</b></td>
+                      <td class="description price">$50</td>
+                    </tr>
+                    <tr>
+                      <td><b>Comm. (%)</b></td>
+                      <td class="description commission">50%</td>
+                    </tr>
+                  </table>
+                  <button
+                    class="promote-btn btn"
+                    onclick="productDetails(this)"
+                  >
+                    Promote
+                  </button>
+                </div>
+                <div class="product-box">
+                  <table>
+                    <tr>
+                      <td><b>Products</b></td>
+                      <td class="description product-name">
+                        affiliate marketing accelerator program
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><b>Product Type</b></td>
+                      <td class="description product-type">Digital</td>
+                    </tr>
+                    <tr>
+                      <td><b>Price ($)</b></td>
+                      <td class="description price">$50</td>
+                    </tr>
+                    <tr>
+                      <td><b>Comm. (%)</b></td>
+                      <td class="description commission">50%</td>
+                    </tr>
+                  </table>
+                  <button
+                    class="promote-btn btn"
+                    onclick="productDetails(this)"
+                  >
+                    Promote
+                  </button>
+                </div>
+                <div class="product-box">
+                  <table>
+                    <tr>
+                      <td><b>Products</b></td>
+                      <td class="description product-name">
+                        affiliate marketing accelerator program
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><b>Product Type</b></td>
+                      <td class="description product-type">Digital</td>
+                    </tr>
+                    <tr>
+                      <td><b>Price ($)</b></td>
+                      <td class="description price">$50</td>
+                    </tr>
+                    <tr>
+                      <td><b>Comm. (%)</b></td>
+                      <td class="description commission">50%</td>
+                    </tr>
+                  </table>
+                  <button
+                    class="promote-btn btn"
+                    onclick="productDetails(this)"
+                  >
+                    Promote
+                  </button>
+                </div>
+              </div>
+            </template>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- Js -->
+    <script src="/js/app.js"></script>
+    <script src="/js/transition.js"></script>
+    <script src="/js/theme.js"></script>
+  </body>
+</html>

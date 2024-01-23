@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#05ce81" />
+    <title>Marketer Dashboard | Update Profile</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/Styles/dashboard.css" />
+    <link rel="stylesheet" href="/Styles/marketplace.css" />
+    <link rel="stylesheet" href="/Styles/withdraw.css" />
+    <link rel="stylesheet" href="/Styles/team.css" />
+    <link rel="stylesheet" href="/Styles/plug-in.css" />
+    <link rel="stylesheet" href="/Styles/notification.css" />
+    <link rel="stylesheet" href="/Styles/dashboard-transition.css" />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- MATERIAL ICON -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <!-- AOS LINK -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="/assets/logo2.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <aside>
+        <header>
+          <a href="#" class="logo">
+            <img src="/assets/logo2.png" alt="Affilite Logo" />
+            <h2 class="hide">Affilite</h2>
+          </a>
+        </header>
+        <hr />
+
+        <!-- NAVIGATION LINKS -->
+        <div class="menu">
+          <nav>
+            <ul>
+              <li>
+                <a href="../dashbord.html" class="links">
+                  <div class="page-link">
+                    <span class="material-symbols-outlined">dashboard</span>
+                    <b class="hide">Dashboard</b>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="../marketplace.html" class="links">
+                  <div class="page-link">
+                    <span class="material-symbols-outlined">storefront</span>
+                    <b class="hide">Marketplace</b>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="../withdraw.html" class="links">
+                  <div class="page-link">
+                    <span class="material-symbols-outlined">payments</span>
+                    <b class="hide">Withdraw</b>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="../team.html" class="links">
+                  <div class="page-link">
+                    <span class="material-symbols-outlined">diversity_3</span>
+                    <b class="hide">Team Cycle</b>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="../contract.html" class="links">
+                  <div class="page-link">
+                    <span class="material-symbols-outlined">verified_user</span>
+                    <b class="hide">Contract</b>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="../plugin.html" class="links plugin-link">
+                  <div class="page-link">
+                    <span class="material-symbols-outlined">extension</span>
+                    <b class="hide">Plug-in</b>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </aside>
+
+      <!-- MOBILE SIDEBAR -->
+
+      <aside class="mobile-sidebar">
+        <header>
+          <a href="#" class="logo">
+            <img src="/assets/logo2.png" alt="Affilite Logo" />
+            <h2 class="hide">Affilite</h2>
+          </a>
+
+          <div class="close-menu close">
+            <span class="material-symbols-outlined hover">close</span>
+          </div>
+        </header>
+        <hr />
+
+        <!-- NAVIGATION LINKS -->
+        <div class="menu">
+          <nav>
+            <ul>
+              <li>
+                <a href="../dashbord.html" class="links">
+                  <div class="page-link">
+                    <span class="material-symbols-outlined">dashboard</span>
+                    <b class="hide">Dashboard</b>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="../marketplace.html" class="links">
+                  <div class="page-link">
+                    <span class="material-symbols-outlined">storefront</span>
+                    <b class="hide">Marketplace</b>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="../withdraw.html" class="links">
+                  <div class="page-link">
+                    <span class="material-symbols-outlined">payments</span>
+                    <b class="hide">Withdraw</b>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="../team.html" class="links">
+                  <div class="page-link">
+                    <span class="material-symbols-outlined">diversity_3</span>
+                    <b class="hide">Team Cycle</b>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="../contract.html" class="links">
+                  <div class="page-link">
+                    <span class="material-symbols-outlined">verified_user</span>
+                    <b class="hide">Contract</b>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="../plugin.html" class="links plugin-link">
+                  <div class="page-link">
+                    <span class="material-symbols-outlined">extension</span>
+                    <b class="hide">Plug-in</b>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </aside>
+      <div class="dark-bg close"></div>
+      <!-- END OF MOBILE SIDEBAR -->
+
+      <div class="content">
+        <div class="transition active">
+                <div class="transition-content">
+                    <div class="spinner"></div>
+                    <h3>Fetching...</h3>
+                </div>
+            </div>
+        <div class="top-nav">
+          <div class="left-side flex">
+            <div class="open-menu open">
+              <span class="material-symbols-outlined hover"
+                >side_navigation</span
+              >
+            </div>
+            <h2 class="page-title">Update <span class="hide">Profile</span></h2>
+          </div>
+
+          <div class="right-side flex">
+            <!-- DROPDOWN -->
+            <div class="drop-down">
+              <ul>
+                <li>
+                  <a href="./profile.html">
+                    <div class="page-link">
+                      <span class="material-symbols-outlined"
+                        >manage_accounts</span
+                      >
+                      <span>Profile</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="page-link">
+                      <span class="material-symbols-outlined">cycle</span>
+                      <span>Switch</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="page-link">
+                      <span class="material-symbols-outlined">logout</span>
+                      <span>Logout</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- DARK/ LIGHT MODE -->
+            <div class="theme-toggle flex">
+              <span class="material-symbols-outlined hover" id="dark"
+                >dark_mode</span
+              >
+              <span class="material-symbols-outlined hover" id="light"
+                >light_mode</span
+              >
+            </div>
+
+            <!-- NOTIFICATION -->
+            <a href="./notification.html" class="notification-link">
+              <div class="notification">
+                <span class="material-symbols-outlined notification-bell hover"
+                  >notifications</span
+                >
+                <div class="indicator"></div>
+              </div>
+            </a>
+
+            <!-- PROFILE -->
+            <a>
+              <div class="profile-container">
+                <div class="user-name hover">Gift Jackson</div>
+                <div class="initial flex bg-circle">G</div>
+                <span class="material-symbols-outlined">expand_more</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <main id="content">
+          <div class="container">
+            <div class="profile-card">
+              <form action="#" method="post">
+                <label class="update-img-wrapper" for="img">
+                  <span class="material-symbols-outlined">add</span>
+                  <span>Add Picture</span>
+                </label>
+                <input
+                  type="file"
+                  name="imageUpload"
+                  id="img"
+                  class="imgInput"
+                  accept="image/*"
+                />
+                <div class="info-wrapper">
+                  <h3>Current Info</h3>
+                  <table>
+                    <tr>
+                      <td><b>Name:</b></td>
+                      <td style="text-align: right">
+                        <span class="fname">Gift</span>
+                        <span class="lname">Jackson</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><b>E-mail:</b></td>
+                      <td style="text-align: right">
+                        <span class="email">hello@world.com</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><b>Phone Number:</b></td>
+                      <td style="text-align: right">
+                        <span class="pnumber">+234 123456789</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><b>Description:</b></td>
+                      <td style="text-align: right">
+                        <span class="description"
+                          >Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Eveniet saepe modi beatae quidem ipsum
+                          excepturi.</span
+                        >
+                      </td>
+                    </tr>
+                  </table>
+
+                  <div class="update-form">
+                    <h3>Add New Info</h3>
+                    <div class="input-control">
+                      <label for="new-fname">New First Name:</label>
+                      <input type="text" id="new-fname" name="new-fname" />
+                    </div>
+                    <div class="input-control">
+                      <label for="new-lname">New Last Name:</label>
+                      <input type="text" id="new-lname" name="new-lname" />
+                    </div>
+                    <div class="input-control">
+                      <label for="new-email">New E-mail Address:</label>
+                      <input type="text" id="new-email" name="new-email" />
+                    </div>
+                    <div class="input-control">
+                      <label for="new-phonenum">New Phone Number:</label>
+                      <input
+                        type="text"
+                        id="new-phonenum"
+                        name="new-phonenum"
+                      />
+                    </div>
+                    <div class="input-control">
+                      <label for="description">Description:</label>
+                      <textarea
+                        name="description"
+                        id="description"
+                        cols="30"
+                        rows="5"
+                      ></textarea>
+                    </div>
+
+                    <div class="update-btns">
+                      <button type="submit" class="update-profile-btn">
+                        Done
+                      </button>
+                      <button type="reset" class="reset-profile-btn">
+                        Reset
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <style>
+      .imgInput {
+        display: none;
+      }
+
+      .profile-card {
+        background-color: var(--color-secondary);
+        padding: 1rem;
+        border-radius: 1rem;
+        width: 80%;
+        margin: 0 auto 2rem;
+      }
+
+      .profile-card .update-img-wrapper {
+        margin-bottom: 1rem;
+        padding: 0.4rem;
+        height: 100px;
+        width: 100px;
+        margin: 1rem auto;
+        border-radius: 0.5rem;
+        border: 1px dashed var(--input-border);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        cursor: pointer;
+      }
+
+      .update-btns button:hover {
+        filter: brightness(85%);
+      }
+
+      .update-btns button:active {
+        transform: scale(0.9);
+      }
+
+      .email {
+        text-transform: lowercase;
+      }
+
+      .update-form {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+      }
+      .update-form h3 {
+        margin-bottom: 0.5rem;
+      }
+      .update-form .input-control {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.5rem;
+      }
+      .update-form .input-control input,
+      .update-form .input-control textarea {
+        padding: 0.8rem;
+        margin-top: 0.3rem;
+        border-radius: 0.5rem;
+        border: 1px solid var(--input-border);
+        background-color: transparent;
+      }
+
+      .update-form .input-control input:focus,
+      .update-form .input-control textarea:focus {
+        border-color: var(--color-primary);
+      }
+      .update-btns {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-around;
+      }
+      .update-btns button {
+        height: 50px;
+        width: 30%;
+        border-radius: 0.5rem;
+        transition: 0.2s;
+      }
+      .update-profile-btn {
+        border: 0;
+        background-color: var(--color-primary);
+        cursor: pointer;
+        color: #fefefe;
+      }
+      .reset-profile-btn {
+        border: 1px solid var(--color-primary);
+        background-color: var(--color-secondary);
+        color: var(--color-primary);
+      }
+
+      .info-wrapper table {
+        margin-top: 0.5rem;
+      }
+      .info-wrapper h3 {
+        padding-left: 0.2rem;
+      }
+
+      @media screen and (max-width: 539px) {
+        .profile-card {
+          width: 100%;
+        }
+        .update-btns {
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+        .update-btns button {
+          width: 100%;
+        }
+      }
+    </style>
+
+    <!-- Js -->
+    <script src="/js/app.js"></script>
+    <script src="/js/transition.js"></script>
+    <script src="/js/theme.js"></script>
+  </body>
+</html>

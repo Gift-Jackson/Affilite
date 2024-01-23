@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Affilite || Login</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../Styles/style.css" />
+    <link rel="stylesheet" href="../Styles/mediaquery.css" />
+    <link rel="stylesheet" href="../Styles/form.css" />
+    <link rel="stylesheet" href="../Styles/toast.css" />
+    <link rel="stylesheet" href="../Styles/transition.css" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon" />
+    <!-- MATERIAL ICON -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <!-- AOS LINK -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- TRANSITION EFFECT -->
+    <div class="transition transition-2 active"></div>
+
+    <div class="login">
+      <header class="bg header">
+        <div class="logo">
+          <a href="/">
+            <img src="/assets/logo.png" alt="Affilite Logo" />
+          </a>
+        </div>
+
+        <nav>
+          <ul>
+            <li>
+              <a href="/">
+                How It works
+                <svg viewBox="0 0 455.555 48">
+                  <path
+                    d="M0 2c37.962 0 37.962 44 75.924 44s37.962-44 75.924-44 37.962 44 75.923 44c37.962 0 37.962-44 75.925-44 37.965 0 37.965 44 75.929 44s37.965-44 75.93-44"
+                  />
+                  <path
+                    d="M0 2c37.962 0 37.962 44 75.924 44s37.962-44 75.924-44 37.962 44 75.923 44c37.962 0 37.962-44 75.925-44 37.965 0 37.965 44 75.929 44s37.965-44 75.93-44"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                Pricing
+                <svg viewBox="0 0 455.555 48">
+                  <path
+                    d="M0 2c37.962 0 37.962 44 75.924 44s37.962-44 75.924-44 37.962 44 75.923 44c37.962 0 37.962-44 75.925-44 37.965 0 37.965 44 75.929 44s37.965-44 75.93-44"
+                  />
+                  <path
+                    d="M0 2c37.962 0 37.962 44 75.924 44s37.962-44 75.924-44 37.962 44 75.923 44c37.962 0 37.962-44 75.925-44 37.965 0 37.965 44 75.929 44s37.965-44 75.93-44"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                Features &nbsp;
+                <i class="fa-solid fa-angle-down"></i>
+                <svg viewBox="0 0 455.555 48">
+                  <path
+                    d="M0 2c37.962 0 37.962 44 75.924 44s37.962-44 75.924-44 37.962 44 75.923 44c37.962 0 37.962-44 75.925-44 37.965 0 37.965 44 75.929 44s37.965-44 75.93-44"
+                  />
+                  <path
+                    d="M0 2c37.962 0 37.962 44 75.924 44s37.962-44 75.924-44 37.962 44 75.923 44c37.962 0 37.962-44 75.925-44 37.965 0 37.965 44 75.929 44s37.965-44 75.93-44"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                FAQS
+                <svg viewBox="0 0 455.555 48">
+                  <path
+                    d="M0 2c37.962 0 37.962 44 75.924 44s37.962-44 75.924-44 37.962 44 75.923 44c37.962 0 37.962-44 75.925-44 37.965 0 37.965 44 75.929 44s37.965-44 75.93-44"
+                  />
+                  <path
+                    d="M0 2c37.962 0 37.962 44 75.924 44s37.962-44 75.924-44 37.962 44 75.923 44c37.962 0 37.962-44 75.925-44 37.965 0 37.965 44 75.929 44s37.965-44 75.93-44"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="menu-toggle" onclick="openMenu()">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </div>
+      </header>
+
+      <!-- Mobile Nav -->
+      <div class="mobile-nav">
+        <div class="close-menu" onclick="closeMenu()">
+          <i class="fa-solid fa-close"></i>
+          close
+        </div>
+        <ul>
+          <li><a href="#">How it works</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+
+        <div class="mobile-nav-btns">
+          <a href="/auth/register.html">
+            <button class="signup-btn">Sign Up</button>
+          </a>
+          <a href="/auth/login.html">
+            <button class="login-btn">Login</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="triangles">
+        <div class="triangle triangle-1"></div>
+        <div class="triangle triangle-2"></div>
+        <div class="triangle triangle-3"></div>
+        <div class="triangle triangle-4"></div>
+        <div class="triangle triangle-5"></div>
+        <div class="triangle triangle-6"></div>
+      </div>
+
+      <!-- Form -->
+      <main>
+        <div class="form-container">
+          <div class="title">
+            <h2>Log in to Affilite</h2>
+            <p>Welcome back! 👋</p>
+          </div>
+          <div class="toast">I am a toast!</div>
+          <form id="loginForm">
+            <div class="input-control">
+              <label for="uname">Username:</label>
+              <input type="text" name="uname" id="uname" autocomplete="off" />
+            </div>
+            <div class="input-control">
+              <label for="pwd">Password:</label>
+              <input
+                type="password"
+                name="password"
+                id="pwd"
+                autocomplete="off"
+              />
+              <span class="toggle-pwd" onclick="showAndHidePassword()"
+                >Show</span
+              >
+            </div>
+            <div class="forgot-pwd">
+              <a href="#">Forgot your password?</a>
+            </div>
+            <button type="submit">Login</button>
+          </form>
+          <p>
+            Don&apos;t have an account?
+            <a href="/auth/register.html" class="highlight">Register</a>
+          </p>
+        </div>
+      </main>
+    </div>
+
+    <!-- Javascript -->
+    <script src="../js/main.js"></script>
+    <script src="../js/transition.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      // Show and hide password
+      const togglePwd = document.querySelector(".toggle-pwd");
+      const pwdInput = document.querySelector("#pwd");
+
+      let showAndHidePassword = () => {
+        pwdInput.type = pwdInput.type === "password" ? "text" : "password";
+        togglePwd.innerHTML = pwdInput.type === "password" ? "Show" : "Hide";
+      };
+    </script>
+
+    <!-- form validation -->
+    <script>
+      const loginForm = document.querySelector("#loginForm");
+      const username = document.querySelector("#uname");
+      const password = document.querySelector("#pwd");
+      const toast = document.querySelector(".toast");
+      const inputFields = document.querySelectorAll(
+        ".form-container form input"
+      );
+
+      loginForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        if (username.value === "" && password.value === "") {
+          toast.classList.add("is-active");
+          inputFields.forEach((inputField) => {
+            inputField.classList.add("error");
+          });
+          toast.textContent = "All fields are required";
+
+          setTimeout(() => {
+            toast.classList.remove("is-active");
+            inputFields.forEach((inputField) => {
+              inputField.classList.remove("error");
+            });
+          }, 3000);
+        } else if (password.value === "") {
+          toast.classList.add("is-active");
+          toast.textContent = "Password is are required";
+
+          setTimeout(() => {
+            toast.classList.remove("is-active");
+          }, 3000);
+        } else if (password.value.length <= 5) {
+          toast.classList.add("is-active");
+          toast.textContent = "Password should have a min character 6";
+
+          setTimeout(() => {
+            toast.classList.remove("is-active");
+          }, 3000);
+        } else {
+          window.location.href = "/marketer-dashboard/dashbord.html";
+        }
+      });
+    </script>
+  </body>
+</html>
