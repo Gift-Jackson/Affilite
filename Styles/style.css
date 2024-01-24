@@ -836,6 +836,7 @@ header.header .menu-toggle .bar::before
     100% {
         opacity: 0;
         transform: translateY(100px);
+        display: none;
     }
 }
 

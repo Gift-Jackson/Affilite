@@ -228,7 +228,7 @@
           }, 3000);
         } else if (password.value.length <= 5) {
           toast.classList.add("is-active");
-          toast.textContent = "Password should have a min character 6";
+          toast.textContent = "Password should be at least 6 characters!";
 
           setTimeout(() => {
             toast.classList.remove("is-active");
