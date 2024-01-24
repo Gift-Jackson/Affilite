@@ -219,6 +219,13 @@
               inputField.classList.remove("error");
             });
           }, 3000);
+        } else if (username.value === "") {
+          toast.classList.add("is-active");
+          toast.textContent = "Username is are required";
+
+          setTimeout(() => {
+            toast.classList.remove("is-active");
+          }, 3000);
         } else if (password.value === "") {
           toast.classList.add("is-active");
           toast.textContent = "Password is are required";
