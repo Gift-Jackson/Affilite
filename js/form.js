@@ -67,7 +67,13 @@ signupForm.addEventListener("submit", (e) => {
         }, 3000)
     }
     else {
-        window.location.href = "/marketer-dashboard/dashbord.html"
+        registerUser({
+            first_name: firstName.value,
+            last_name: lastName.value,
+            username: username.value,
+            password: password.value
+        })
+        // window.location.href = "/marketer-dashboard/dashbord.html"
     }
 
 })

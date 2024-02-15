@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Affilite || Create Account</title>
+    <title>Affilite | Role</title>
     <!-- CSS -->
     <link rel="stylesheet" href="../Styles/style.css" />
     <link rel="stylesheet" href="../Styles/mediaquery.css" />
     <link rel="stylesheet" href="../Styles/form.css" />
-    <link rel="stylesheet" href="../Styles/transition.css" />
     <link rel="stylesheet" href="../Styles/toast.css" />
+    <link rel="stylesheet" href="../Styles/transition.css" />
     <!-- Favicon -->
     <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon" />
     <!-- MATERIAL ICON -->
@@ -29,11 +29,10 @@
     />
     <!-- Aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <style></style>
   </head>
   <body>
     <!-- TRANSITION EFFECT -->
-    <div class="transition transition-3 active"></div>
+    <div class="transition transition-2 active"></div>
 
     <div class="login">
       <header class="bg header">
@@ -140,56 +139,21 @@
 
       <!-- Form -->
       <main>
-        <div class="form-container">
-          <div class="title">
-            <h2>Create your Affilite account</h2>
-            <p>Set up your account and start selling...</p>
-          </div>
-          <div class="toast">I am a toast!</div>
-          <form id="signupForm">
-            <div class="input-control">
-              <label for="fname">Firstname:</label>
-              <input type="text" name="fname" id="fname" autocomplete="off" />
+        <h2>Select Role!</h2>
+        <p>Choose a role you want to sign up for at the moment.</p>
+        <div class="role-container">
+          <a href="/marketer-dashboard/dashbord.html">
+            <div class="role">
+              <img src="/assets/marketer.svg" alt="marketer" />
+              <h3>Marketer</h3>
             </div>
-            <div class="input-control">
-              <label for="lname">Lastname:</label>
-              <input type="text" name="lname" id="lname" autocomplete="off" />
+          </a>
+          <a href="#">
+            <div class="role">
+              <img src="/assets/vendor.svg" alt="vendor" />
+              <h3>Vendor</h3>
             </div>
-            <div class="input-control">
-              <label for="email">E-mail Address:</label>
-              <input type="email" name="email" id="email" autocomplete="off" />
-            </div>
-            <div class="input-control">
-              <label for="uname">Username:</label>
-              <input type="text" name="name" id="uname" autocomplete="off" />
-            </div>
-            <div class="input-control">
-              <label for="pwd">Password:</label>
-              <input
-                type="password"
-                name="password"
-                id="pwd"
-                autocomplete="off"
-              />
-              <span class="toggle-pwd" onclick="showAndHidePassword()"
-                >Show</span
-              >
-            </div>
-            <div class="input-control">
-              <label for="referralid">Referral ID:</label>
-              <input
-                type="text"
-                name="referralid"
-                id="referralid"
-                autocomplete="off"
-              />
-            </div>
-            <button type="submit">Create Account</button>
-          </form>
-          <p>
-            Already have an account?
-            <a href="/auth/login.html" class="highlight">Login</a>
-          </p>
+          </a>
         </div>
       </main>
     </div>
@@ -198,109 +162,63 @@
     <script src="../js/main.js"></script>
     <script src="../js/authActions.js"></script>
     <script src="../js/landing-page-transition.js"></script>
-    <script src="../js/form.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-    <script>
-      // Show and hide password
-      const togglePwd = document.querySelector(".toggle-pwd");
-      const pwdInput = document.querySelector("#pwd");
 
-      let showAndHidePassword = () => {
-        pwdInput.type = pwdInput.type === "password" ? "text" : "password";
-        togglePwd.innerHTML = pwdInput.type === "password" ? "Show" : "Hide";
-      };
-    </script>
+    <style>
+      h2 {
+        margin-top: 3rem;
+        text-align: center;
+        color: var(--primary-color-2);
+      }
+      p {
+        text-align: center;
+        color: var(--primary-color-2);
+      }
+      .role-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+      .role-container .role {
+        width: 200px;
+        min-height: 300px;
+        text-align: center;
+        border: 1px solid var(--border);
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 1rem;
+      }
+      .role-container .role:hover {
+        outline: 2px solid var(--primary-color-2);
+        outline-offset: 2px;
+        border-color: var(--primary-color-2);
+      }
+      .role-container .role img {
+        width: 100%;
+      }
 
-    <!-- Register User -->
-    <script>
-      const signupForm = document.querySelector("#signupForm");
-      const firstName = document.querySelector("#fname");
-      const lastName = document.querySelector("#lname");
-      const email = document.querySelector("#email");
-      const username = document.querySelector("#uname");
-      const password = document.querySelector("#pwd");
-      const toast = document.querySelector(".toast");
-      const inputFields = document.querySelectorAll(
-        ".form-container form input"
-      );
+      .role-container .role h3 {
+        color: var(--primary-color-2);
+      }
 
-      signupForm.addEventListener("submit", (e) => {
-        e.preventDefault();
-
-        if (
-          username.value === "" &&
-          firstName.value === "" &&
-          lastName.value === "" &&
-          email.value === "" &&
-          password.value === ""
-        ) {
-          toast.classList.add("is-active");
-          inputFields.forEach((inputField) => {
-            inputField.classList.add("error");
-          });
-          toast.textContent = "All fields are required";
-
-          setTimeout(() => {
-            toast.classList.remove("is-active");
-            inputFields.forEach((inputField) => {
-              inputField.classList.remove("error");
-            });
-          }, 3000);
-        } else if (firstName.value === "") {
-          toast.classList.add("is-active");
-          toast.textContent = "Firstname is are required";
-
-          setTimeout(() => {
-            toast.classList.remove("is-active");
-          }, 3000);
-        } else if (lastName.value === "") {
-          toast.classList.add("is-active");
-          toast.textContent = "Lastname is are required";
-
-          setTimeout(() => {
-            toast.classList.remove("is-active");
-          }, 3000);
-        } else if (username.value === "") {
-          toast.classList.add("is-active");
-          toast.textContent = "Username is are required";
-
-          setTimeout(() => {
-            toast.classList.remove("is-active");
-          }, 3000);
-        } else if (password.value === "") {
-          toast.classList.add("is-active");
-          toast.textContent = "Password is are required";
-
-          setTimeout(() => {
-            toast.classList.remove("is-active");
-          }, 3000);
-        } else if (password.value.length <= 5) {
-          toast.classList.add("is-active");
-          toast.textContent = "Password should be at least 6 characters";
-
-          setTimeout(() => {
-            toast.classList.remove("is-active");
-          }, 3000);
-        } else {
-          const formData = new FormData(loginForm);
-          const data = Object.fromEntries(formData);
-
-          fetch("https://affiliate-vt50.onrender.com/api/v1/auth/signup", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(data),
-          })
-            .then((res) => res.json())
-            document.location.replace('./role.html')
-            .then((data) => console.log(data))
-            .catch((error) => console.log(error));
+      @media (max-width: 500px) {
+        .role-container {
+          flex-direction: column;
         }
-      });
-    </script>
+        .role-container .role {
+          min-height: 200px;
+        }
+        .role-container .role img {
+          margin-bottom: 1rem;
+        }
+      }
+    </style>
   </body>
 </html>

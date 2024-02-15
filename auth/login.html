@@ -177,11 +177,13 @@
 
     <!-- Javascript -->
     <script src="../js/main.js"></script>
+    <!-- <script src="../js/auth.js"></script> -->
     <script src="../js/landing-page-transition.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+
     <script>
       // Show and hide password
       const togglePwd = document.querySelector(".toggle-pwd");
@@ -241,7 +243,20 @@
             toast.classList.remove("is-active");
           }, 3000);
         } else {
-          window.location.href = "/marketer-dashboard/dashbord.html";
+          const formData = new FormData(loginForm);
+          const data = Object.fromEntries(formData);
+
+          fetch("https://affiliate-vt50.onrender.com/api/v1/auth/login", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data)
+          })
+            .then((res) => res.json())
+            document.location.replace('./role.html')
+            .then(data => console.log(data))
+            .catch((error) => console.log(error));
         }
       });
     </script>
